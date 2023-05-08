@@ -2,16 +2,45 @@ import * as React from 'react';
 import { Pressable,View,Text,StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {TelaA} from './components/TelaA'
-import {TelaB} from './components/TelaB'
-import {TelaC} from './components/TelaC'
-
 
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.contaienr}>
       <Pressable title="Go to Details" onPress={() => navigation.navigate('TelaA')} style={styles.btn}>
         <Text style={styles.font}> Play Go</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+function TelaA({ navigation }) {
+  return (
+    <View style={styles.contaienr}>
+      <Pressable title="Go to Details" onPress={() => navigation.navigate('TelaA')} style={styles.btn}>
+        <Text style={styles.font}> TelaC</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+
+function TelaB({ navigation }) {
+  return (
+    <View style={styles.contaienr}>
+      <Pressable title="Go to Details" onPress={() => navigation.navigate('TelaA')} style={styles.btn}>
+        <Text style={styles.font}> TelaA</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+
+
+function TelaC({ navigation }) {
+  return (
+    <View style={styles.contaienr}>
+      <Pressable title="Go to Details" onPress={() => navigation.navigate('TelaA')} style={styles.btn}>
+        <Text style={styles.font}> TelaB</Text>
       </Pressable>
     </View>
   );
