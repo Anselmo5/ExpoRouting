@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Pressable,View,Text,StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/drawer';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/native-stack';
 import App from '../../Primeiro/Navegation/ButtonLink/App';
 
 function HomeScreen({ navigation }) {
